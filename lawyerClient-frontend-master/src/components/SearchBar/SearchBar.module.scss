@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+.searchBarContainer {
+	position: relative;
+	display: flex;
+	background-color: $white;
+	padding: 3px 15px 3px 18px;
+	border: 1px solid #d8ecff;
+	align-items: center;
+	border-radius: 20px;
+	.searchIcon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	.searchInput {
+		flex: 1;
+		.inputField {
+			font-size: 1rem;
+			&::placeholder {
+				color: $veryLightBlue;
+			}
+			&:active {
+				background-color: $white;
+			}
+			&:focus {
+				background-color: $white;
+			}
+		}
+	}
+}

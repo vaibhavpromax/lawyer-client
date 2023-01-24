@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.crm-input {
+  height: 44px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.272);
+  border-radius: 6px;
+  padding: 13px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  outline: none;
+  &::placeholder {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  &.small {
+    height: 36px;
+    padding: 10px 13px;
+    font-size: 0.9rem;
+    &::placeholder {
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,221 @@
+$purple-s: #8172f1;
+
+$blueblack-p: #0a2341;
+$primary: #4f3dd1;
+
+$gray-p: #dfddf5;
+$gray-s: #4e5a61;
+$gray-t: #828282;
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client_request__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.client_request__card {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  padding: 1.25em 1em 1.25em 0;
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  height: max-content;
+  // flex-direction: column;
+  align-items: center;
+  border: 1px solid #384bdf;
+  width: 80%;
+
+  .logo__web {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .client_request_card__container {
+    margin-left: 20px;
+    padding-left: 1em;
+    flex-grow: 1;
+
+    hr {
+      width: 95%;
+    }
+    .heading {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+      display: flex;
+      color: #474747;
+      .details {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        // align-items: baseline;
+
+        &__icon {
+          font-size: 32px;
+          display: flex;
+          gap: 5px;
+          .approve__icon {
+            color: green;
+          }
+
+          .reject__icon {
+            color: red;
+          }
+        }
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+        // margin-right: 45px;
+        // margin-left: 25px;
+        font-size: 24px;
+      }
+
+      //   .status__indicator {
+      //     width: 5px;
+      //     height: 5px;
+      //     display: inline-block;
+      //     border-radius: 50%;
+      //     margin-right: 6px;
+      //   }
+
+      .status__indicator.expiring {
+        background-color: #ed1916;
+      }
+      .status__indicator.active {
+        background-color: #599854;
+      }
+      .status__indicator.pending {
+        background-color: #f27851;
+      }
+
+      .status__text.expiring {
+        color: #ed1916;
+      }
+      .status__text.active {
+        color: #599854;
+      }
+      .status__text.pending {
+        color: #f27851;
+      }
+
+      .status__text {
+        // font-weight: 500;
+        // font-size: 12px;
+        // line-height: 14px;
+        color: #000000;
+        @media (max-width: 700px) {
+          & {
+            display: none;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        & > button {
+          outline: none;
+          background: $gray-p;
+          width: 25px;
+          height: 25px;
+          color: $blueblack-p;
+          border: none;
+          border-radius: 50%;
+        }
+        & .viewFeatures > div {
+          display: flex;
+          align-items: center;
+          color: $purple-s;
+          cursor: pointer;
+          gap: 0.5em;
+          > p {
+            // font-size: 12px;
+            // margin-right: 14px;
+            color: #0786e2;
+          }
+        }
+      }
+    }
+
+    .policyNo {
+      // display: inline-flex;
+      > p {
+        // color: $gray-t;
+        // font-size: 12px;
+        margin-right: 15px;
+      }
+      > img {
+        width: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .number {
+      // font-style: normal;
+      // font-weight: 600;
+      // font-size: 0.75em;
+      line-height: 16px;
+      color: $gray-t;
+    }
+
+    hr {
+      margin: 10px 0;
+    }
+    .meta {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: flex-start;
+      p,
+      .meta_service__container {
+        display: flex;
+        gap: 0 80px;
+      }
+      h6 {
+        margin: 0;
+      }
+      .meta__info {
+        margin-right: 2px;
+      }
+      .key {
+        color: $gray-t;
+        margin-bottom: 3px;
+        font-weight: 500;
+      }
+      .value {
+        font-weight: 400;
+        color: #474747;
+        // font-size: 14px !important;
+      }
+    }
+  }
+}

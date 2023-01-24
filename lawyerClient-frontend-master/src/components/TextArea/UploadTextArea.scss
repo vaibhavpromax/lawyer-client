@@ -1,0 +1,77 @@
+.textarea__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.custom-form-field {
+  font-family: inherit;
+  width: 100%;
+  outline: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0a2340;
+  background: transparent;
+  transition: border-color 0.2s;
+  background: #f6f6f6;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  color: #919191;
+}
+
+.custom-textarea {
+  resize: none;
+
+  border-radius: 0px !important;
+  border: 1px solid black !important;
+  border-bottom: 0 !important;
+  &__close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  &__attachment {
+    width: 20px;
+  }
+
+  &__send {
+    width: 22px;
+  }
+
+  &__file {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid black !important;
+    border-top: 0 !important;
+    padding: 5px 12px 5px;
+  }
+  &__preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  &__chip {
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 3px 6px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 120px;
+    > h3 {
+      margin: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    > img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

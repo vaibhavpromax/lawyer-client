@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+
+.radio {
+	position: relative;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	user-select: none;
+
+	.checkmark {
+		position: absolute;
+		height: 40px;
+		width: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 17px;
+		transition: 0.3s ease-in-out;
+		background: #fff;
+		i {
+			color: $white;
+			display: none;
+			transform: translateY(1px);
+		}
+	}
+
+	input {
+		display: none;
+
+		&:checked ~ .checkmark {
+			background: $primaryGradient;
+			i {
+				display: block;
+			}
+		}
+
+		&:disabled ~ .checkmark {
+			opacity: 0.5;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+@import "../../../../styles/variables.scss";
+
+.crm-input-number-container {
+  border: none;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  button {
+    position: absolute;
+    right: -22px;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    svg {
+      width: 9px;
+      height: 9px;
+      padding: 0.5px;
+    }
+    &.arrow-up {
+      top: 1px;
+    }
+    &.arrow-down {
+      bottom: 1px;
+    }
+    &.small {
+      width: 16.5px;
+      height: 16.5px;
+      right: -20px;
+      svg {
+        width: 9px;
+        height: 9px;
+        padding: 1px;
+      }
+      &.arrow-up {
+        top: 0;
+      }
+      &.arrow-down {
+        bottom: 0;
+      }
+    }
+  }
+  .crm-input {
+    width: 100%;
+    text-align: center;
+    padding: 13px 8px;
+    &.small {
+      padding: 8px 8px;
+      &::placeholder {
+        padding: 8px 11px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+$tableHeading: #eaeaea;
+
+.lawyer__container {
+  margin: 50px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  .lawyer_card {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #eaeaea;
+
+    .fz12 {
+      font-size: 20px;
+    }
+  }
+}
+
+.about_lawyer {
+  border-radius: 10px;
+  background: #eaeaea;
+  padding: 10px 20px;
+  font-size: 22px;
+
+  &__heading {
+    font-size: 32px !important;
+    margin: 16px 0 20px 0;
+  }
+  &__content {
+    line-height: 36px;
+    font-size: 24px;
+  }
+}
+
+.review-form {
+  .review-textarea {
+    height: 100px;
+  }
+}
+
+.review {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 10px 10px 0 0;
+    background: $tableHeading;
+    // width: 60%;
+
+    &__name {
+      font-size: 18px !important;
+      margin: 0 0 2px 0;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  }
+}

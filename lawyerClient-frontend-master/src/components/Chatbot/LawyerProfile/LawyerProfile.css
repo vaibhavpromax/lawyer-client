@@ -1,0 +1,9 @@
+.lawyer{
+    display: flex;
+    align-items: center;
+}
+.image{
+     position: relative;
+top:10px;
+margin-right: 40px;
+}

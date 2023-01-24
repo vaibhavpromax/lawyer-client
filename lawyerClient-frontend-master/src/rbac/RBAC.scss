@@ -1,0 +1,19 @@
+@import "../styles/variables.scss";
+
+.route-page-container {
+  display: flex;
+  flex-direction: column;
+  .navbar {
+    width: 100%;
+  }
+  .route-container {
+    width: 100%;
+    flex: 1;
+    max-width: 100%;
+    overflow-x: hidden;
+    // padding-left: 1.5rem;
+    padding-top: 5.2rem;
+    // padding-right: 1.2rem;
+    // padding-bottom: 1.2rem;
+  }
+}

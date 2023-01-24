@@ -1,0 +1,16 @@
+@import "./../../../assets/scss/pallet";
+
+.request__container {
+  padding: 40px;
+}
+
+.custom-form-field {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.272);
+  border-radius: 6px;
+  padding: 13px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  outline: none;
+}

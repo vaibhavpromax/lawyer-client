@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// .navbar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 10px;
+
+//   ul {
+//     display: flex;
+//     align-items: center;
+//   }
+//   li {
+//     padding: 10px;
+//     list-style-type: none;
+//   }
+//   button {
+//     margin: 10px;
+//     // z-index: 99;
+//     width: 165px;
+//     height: 30px;
+//     border-radius: 20px;
+//     background-color: #00bcd4;
+//     color: white;
+//     font-size: 15px;
+//     // line-height: 50px;
+//     cursor: pointer;
+//   }
+// }
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  // background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(12, 15, 214) 100%);
+  z-index: 999;
+  background: black;
+  align-items: center;
+  //rgb(9, 10, 90)0%;
+  // li,
+  // a,
+  // button {
+  //   font-family: "Roboto", sans-serif;
+  //   font-size: 16px;
+  //   color: #ecf0f1;
+  //   text-decoration: none;
+  // }
+  // li {
+  //   list-style-type: none;
+  //   display: inline-block;
+  //   padding: 0px 20px;
+  // }
+  // a {
+  //   text-decoration: none;
+  //   transition: all 0.3s ease 0s;
+  // }
+  // a:hover {
+  //   color: #00bcd4;
+  // }
+  // h2 {
+  //   cursor: pointer;
+  // }
+  // .nav-button {
+  //   margin: 20px;
+  // }
+
+  .navbar-logo {
+    height: 120px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 120px;
+  }
+  ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    justify-content: end;
+    text-align: center;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    color: #fff;
+    margin-right: 10px;
+  }
+  .nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
+  .user {
+    display: flex;
+    height: 80px;
+    margin: 0px 20px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10px;
+  }
+}
